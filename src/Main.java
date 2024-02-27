@@ -7,5 +7,11 @@ public class Main {
         System.out.println("distance given points:" + distance.distance(2, 2));
 
         System.out.println("distance given Point Object:" + distance.distance(distance1));
+
+        Player newPlayer = new Player("gamer", 100, Weapon.KNIFE);
+        newPlayer.loseHealth(200);
+        newPlayer.restoreHealth(300);
+        System.out.println(newPlayer.healthRemaining());
     }
+
 }
